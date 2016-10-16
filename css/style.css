@@ -1,0 +1,593 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 16px;
+	height: 100%;
+}
+header, nav, section, article, footer {
+	display: block;
+}
+#wrapper {
+	background-color: #ffffff;
+	width: 100%;
+}
+
+/*-------------------------------------------------------
+		MAIN HEADER
+-------------------------------------------------------*/
+#mainHeader {
+	height: auto;
+	padding: 50px 4%;
+	width: 92%;
+}
+#mainHeader:before, #mainHeader:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#pageHeading {
+	font-family: 'Oswald', sans-serif; 
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	width: 25%;
+}
+#logo img{
+	width: 100%;
+}
+/*Hides logo heading*/
+#logo h1, #mainMenu header {
+	position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}
+.bar {
+	border: solid black 2px;
+	height: 0;
+}
+.headerForm {
+	border: solid 1px black;
+	border-radius: 2.5px;	
+	margin-left: 5.8%;	
+}
+.headerForm:before, .headerForm:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#headerForm {
+	float: left;
+	width: 27%;
+}
+#btnHeaderSubmit, #btnMobileSubmit {
+	background: none;
+	background: url(../imgs/icons/lupa.jpg) center no-repeat;
+	border: none;
+	float: left;	
+	padding: 10px 20px 10px 20px;
+		
+}
+.searchBar {
+	border: none;
+	float: left;
+	padding: 10px;
+	width: 80%;
+}
+input[type=email]:focus, input[type=search]:focus {
+	outline: none;
+}
+#shippingMsg {
+	color: #D73A1E;
+	float: left;
+	margin-left: 9.7%;	
+}
+#shippingMsg p:first-child {
+	font-size: 1.25em;
+	font-weight: normal;
+}
+#bag {
+	background: url(../imgs/icons/caldeirao.jpg) left no-repeat; 
+	color: #B3B3C3;
+	float: right;
+	font-weight: bold;
+	margin-left: 2.9%;
+	padding: 10px 10px 10px 60px;
+	width: 6%;
+}
+#bagValue {
+	color: #D73A1E;
+	font-weight: bold;
+}
+/*MOBILE*/
+#mobileMenuIcon {
+	display: none;
+	float: left;
+}
+#mobileShippngMsg {
+	background-color: #E6E6E6;
+	color: #736975;
+	display: none;
+	padding: 5px 0;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	width: 100%;
+}
+#mobileMenu {
+	background-color: #ffffff;
+	display: none;
+	left: 0;
+	height: auto;
+	padding-top: 25px;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+}
+#mobileMenu:before, #mobileMenu:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#closeIcon {
+	margin: 2.5px 0 0 4%;
+}
+#mobileMenuForm {
+	display: block;
+	float: right;
+	margin-right: 4%;
+	width: 75%;
+}
+#mobileMenu ul {
+	list-style: none;
+	height: auto;
+	margin-top: 40px;
+}
+#mobileMenu ul li {
+	background-color: #523468;
+	border-bottom: solid 1px #6B5383;
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+#mobileMenu ul li:hover {
+	background-color: #422A53;
+	border: solid 1px #422A53;
+}
+#mobileMenu ul li a:hover {
+	border-bottom: solid 1px #6B5383;
+}
+#mobileMenu ul li a {
+	color: #ffffff;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 40px;
+	margin-left: 50px;	
+	padding-bottom: 3px;
+	text-decoration: none;	
+}
+#mobileMenu ul li:last-child {
+	text-align: center;
+}
+#mobileMenu ul li:last-child a {
+	margin-left: 0;
+}
+#mobileMenu ul li span {
+	color: #6B5383;
+	font-style: italic;
+	margin: 0 15px;
+}
+/*-------------------------------------------------------
+		END HEADER
+-------------------------------------------------------*/
+
+/*-------------------------------------------------------
+		MAIN MENU
+-------------------------------------------------------*/
+#mainMenu {
+	background-color: #523468;
+	color: #AD758B;
+	font-style: italic;
+	padding: 25px 5%;
+	width: 90%;	
+}
+#mainMenu:before, #mainMenu:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#mainMenuList {	
+	list-style: none;
+}
+#mainMenuList li, #sign li {
+	display: inline-block; 	
+}
+#mainMenuList li a {
+	background: url(../imgs/icons/subMenu_arrow.jpg) right no-repeat;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: .85em;
+	font-weight: bold;
+	margin-right: 10px;
+	padding: 15px 25px 15px 15px;
+	text-decoration: none;
+}
+#mainMenuList li:nth-last-child(2) a, #mainMenuList li:last-child a  {
+	background: none;
+	margin-right: 0;
+	padding: 15px;
+}
+#mainMenuList li:last-child {
+	float: right;
+}
+#mainMenuList li a:hover {
+	background-color: #422A53;
+}
+/*-------------------------------------------------------
+		END MAIN MENU
+-------------------------------------------------------*/
+
+/*-------------------------------------------------------
+		CONTENT
+-------------------------------------------------------*/
+#content {
+	height: auto;
+	padding: 25px 4%;
+	width: 92%;
+}
+#contentHeader {
+	margin-bottom: 50px;
+	font-size: 1em;
+	font-weight: bold;
+	width: 100%;
+}
+.products {
+	width: 100%;
+}
+.price {
+	color: #D73A1E;	
+}
+/*-------------------------------------------------------
+		END CONTENT
+-------------------------------------------------------*/
+/*-------------------------------------------------
+            IMAGE GALLERY Mar-2016
+-------------------------------------------------*/
+#galleryWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.box { 
+  float: left;
+  margin-bottom: 20px;
+  padding-bottom: 25%;
+  position: relative;
+  text-align: center;
+  width: 25%; 
+}
+.boxContent {
+  cursor: pointer;
+  left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+.boxContent img {
+  width: 80%; 
+}
+.boxContent .titleBox {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  color: #000000;
+  font-size: 1em; 
+  font-weight: bold; 
+  text-align: center;
+}
+@media only screen and (max-width: 319px) {
+	.box {
+	    padding-bottom: 100%;
+	    width: 100%;
+	  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+	.box {
+	    padding-bottom: 50%;
+	    width: 50%;
+	  }
+	.boxContent .titleBox  {
+	  	bottom: 10px;
+	  	font-size: .7em;
+	  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  .box {
+    padding-bottom: 50%;
+    width: 50%;
+  }
+  .boxContent .titleBox  {
+  	bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  .box {
+    padding-bottom: 33.3%;
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  .box {
+    padding-bottom: 25%;
+    width: 25%;
+  }
+}
+/*Lightbox*/
+#alphaBg {
+	background-color: rgba(0,0,0,.7);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#lightboxContainer {
+	
+}
+#lightbox {
+	background-color: #ffffff;
+	display: none;
+	font-size: 1em;
+	height: auto;
+	left: 11%;
+	padding: 5% 4%;
+	position: absolute;
+	top: 90px;
+	width: 70%;
+}
+#lightboxContent {
+	width: 100%;
+}
+#lightboxContent h2 {
+	font-size: 1.2em;
+}
+#lightboxContent h3 {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+#lightboxContent ul {
+	list-style: none;
+	margin-bottom: 10px;
+}
+#lightboxPrice {
+	font-weight: bold;
+}
+#lightBoxPriceValue {
+	color: #D73A1E;
+	font-weight: bold;
+}
+#lightboxContent img {
+	float: left;
+	width: 50%;
+}
+#textContainer {
+	float: right;
+	width: 43%;
+}
+#lightboxContent button {
+	background-color: #D73A1E;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 10px 15px;
+}
+#closeBtn {
+	color: #000000;
+	cursor: pointer;
+	font-size: 1.2em;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	z-index: 1000;
+}
+/*-------------------------------------------------
+           END IMAGE GALLERY
+-------------------------------------------------*/
+
+/*-------------------------------------------------------
+		MAIN FOOTER
+-------------------------------------------------------*/
+#mainFooter {
+	background-color: #E6E6E6;
+	height: auto;
+	padding: 25px 4%;
+	width: 92%;
+}
+#footerContent {
+	width: 100%;
+}
+#footerContent:before, #footerContent:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#footerLinks { 
+	float: left;
+	width: 40%;
+}
+#footerMenu, #social {
+	list-style: none;
+}
+#footerMenu li, #social li {
+	display: inline-block;
+}
+#footerMenu li a {
+	color: #D73A1E;	
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-right: 20px;
+	text-decoration: none;
+}
+#social {
+	margin-top: 30px;
+}
+#social li a {
+	margin-right: 25px;
+}
+#newsletter { 
+	background-color: #ffffff;
+	float: right;
+	padding: 30px 20px;
+	width: 38%;
+}
+#newsletter p {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#emailField {
+	border: solid 1px #000000;
+	border-radius: 5px;
+	padding: 5px;
+	width: 75%;
+}
+#submitBtn {
+	background-color: #D73A1E;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	padding: 8px 20px;	
+	font-weight: bold;
+}
+#copyright {
+	color: #736975;
+	font-weight: bold;
+}
+/*-------------------------------------------------------
+		END MAIN FOOTER
+-------------------------------------------------------*/
+
+
+@media screen and (max-width: 1920px) and (min-width: 1710px) {
+	html {
+		font-size: 1.81em;
+	}	
+}
+@media screen and (max-width: 1700px) and (min-width: 1450px) {
+	html {
+		font-size: 1.5em;
+	}	
+}
+@media screen and (max-width: 1440px) and (min-width: 1291px) {
+	html {
+		font-size: 1.3em;
+	}	
+}
+@media only screen and (max-width: 1290px) and (min-width: 1152px) {
+	html {
+		font-size: 1.08em;
+	}	
+}
+@media only screen and (max-width: 1439px) and (min-width: 961px) {
+	#emailField {
+		width: 70%;
+	}
+	#submitBtn {
+		padding: 8px 8px;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.headerForm, #shippingMsg, #mainMenu, #footerMenu {
+		display: none;
+	}
+	#mobileShippngMsg {
+		display: block;
+	}
+	#mobileMenuIcon {
+		display: block;
+	}
+	#mainHeader {
+		padding: 25px 3% 5px 3%;
+		width: 94%;
+	}
+	#pageHeading {
+		margin-left: 12.1%;
+		width: 51.5%; 
+	}
+	#bag { 
+		float: right;
+		width: 11%;
+	}
+	#footerLinks, #newsletter {
+		float: none;
+		margin: 0 auto;
+		padding: 30px 0;
+		width: 96%;
+	}
+	#emailField {
+		width: 260px;
+	}
+	#mainFooter {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 640px) {
+	#bag { 
+		background: url(../imgs/icons/caldeirao.jpg) top no-repeat; 
+		font-size: .75em;
+		margin-left: 0;
+		padding: 41px 0 0 0;
+		width: 40px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#bag {
+		margin-top: -10px;
+	}
+	#contentHeader {
+		text-align: center;
+	}
+	#social li a {
+		margin-right: 15px;
+	}
+	#newsletter {
+		padding: 30px 2%;
+		text-align: left;
+	}
+	#emailField {
+		width: 70%;
+	}
+	#submitBtn {
+		padding: 8px 8px;
+	}
+	#copyright {
+		font-size: .9em;
+	}
+}
+@media only screen and (max-width: 380px) {
+	#lightboxContent img {
+		float: none;
+		width: 100%;
+	}
+	#textContainer {
+		float: none;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 320px) {
+	#emailField {
+		width: 60%;
+	}
+}
